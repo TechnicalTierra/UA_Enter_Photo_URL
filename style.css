@@ -1,0 +1,22 @@
+body {
+  background-color: lightgrey;
+  text-align: center;
+}
+
+input {
+  line-height: 1.5;
+  width: 450px;
+  text-align: center;
+}
+
+.button-div {
+  padding-top: 2.5%;
+}
+
+.display-image-div {
+  height: 450px;
+  width: 450px;
+  background-color: lightblue;
+  margin: 0 auto;
+  margin-top: 2.5%;
+}
