@@ -1,20 +1,13 @@
-/* Project Goal: 
-
-When a URL link is typed or pasted into the input box and the  
+/* Project Goal: When a URL link is typed or copy and pasted into the input box and the user clicks the "Click to Display Image Below" button or presses "Enter" then the image will display in the box (div) below.
 */
 
 // 
 
 // function when button is click
-// function myFunction() {
-//   var imageLink = document.getElementById("imageLink").value;
-//   alert(imageLink);
+function showImage() {
+  var urlInput = document.getElementById("urlInput").value;
 
-// }
 
-// display-image-div
+}
 
-/* What's your age? */
-
-var age = prompt("What's your age?");
-alert(age);
+var dynamicImage; 
