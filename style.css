@@ -1,3 +1,4 @@
+/* css style sheet*/
 body {
   background-color: lightgrey;
   text-align: center;
@@ -9,7 +10,7 @@ input {
   text-align: center;
 }
 
-.button-div {
+.buttonDiv {
   padding-top: 2.5%;
 }
 
