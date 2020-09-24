@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>URL Photo</title>
+  <title>Photo URL</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,14 +13,16 @@
       <h2>Enter username</h2>
       <!-- <h3>Enter a URL to a Photo</h3> -->
 
-      <input type="text"  id="imageLink"> 
+      <input type="text"  id="urlInput" placeholder="Enter a url"> 
       <!-- placeholder="Enter or paste URL here" -->
 
-      <div class="button-div">
-        <button onclick="myFunction()">Click to Display Image Below</button>
+      <div class="buttonDiv">
+        <button onclick="showImage()">Click to Display Image Below</button>
       </div>
 
       <div class="display-image-div">
+
+        <img id="dynamicImage"/>
 
       </div>
     </div>
