@@ -1,28 +1,19 @@
-/* css style sheet*/
 body {
-  background-color: lightgrey;
-  text-align: center;
-  /* justify-items: center; */
-}
-
+  background-color: rgb(224, 182, 103);
+} 
 input {
-  line-height: 1.5;
-  width: 450px;
-  text-align: center;
+  margin-bottom: 1rem;
 }
-
-.buttonDiv {
-  padding-top: 2.5%;
+#clearButton {
+  background-color: rgb(241, 109, 109);
 }
-
-.display-image-div {
-  height: 450px;
-  width: 700px;
-  background-color: lightblue;
-  margin: 0 auto;
-  margin-top: 2.5%;
+#displayButton {
+  background-color: aquamarine;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
 }
 img {
-  height: 450px;
-  width: 700px;
+  width: 400px;
+  height: 350px;
+  border: solid 1px black;
 }
