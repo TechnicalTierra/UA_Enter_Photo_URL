@@ -1,28 +1,34 @@
-/* 
-Project: When a URL link is typed or copy and pasted into the input box and the user clicks the "Click to Display Image Below" button or presses "Enter" then the image will display in the box below.
-*/
+// goal: when the user copies and pastes a URL into the input field, upon the button being clicked (or ENTER/RETURN key is pressed) the image will be displayed below  
 
-// Step 1: Get and store the URL input in a variable: DONE
-// *Only works inside the function
+// step 1: get image url 
+// step 2: when button is clicked or pressed
+// step 3: img src is updated 
 
-// Step 2: Create a function to get the urlInput value : DONE
-// Step 2.a) Update image: DONE
-// Step 3: On mouse click of "Display button" run function: DONE
-// Step a) Update image on mouse click: DONE
+// store variables 
+var urlInput = document.getElementById("urlInput");
+var displayButton = document.getElementById("displayButton");
+var image = document.getElementById("image");
+var clearButton = document.getElementById("clearButton")
 
-// Step 4: On "Enter" press run function: DONE
-function showImage() {
-  let urlInput = document.getElementById("urlInput").value;
-  document.getElementById("dynamicImage").src = urlInput;
-  document.getElementById("urlInput").value = "";
+// functions 
+function displayImage(){
+  // console.log('button clicked');
+  // console.log(urlInput.value);
+  image.src = urlInput.value;
+  // urlInput.value = "";
 }
 
-urlInput.addEventListener("keyup", function(event) {
-  if(event.keyCode === 13) {
-    let urlInput = document.getElementById("urlInput").value;
-    document.getElementById("dynamicImage").src = urlInput;
-    document.getElementById("urlInput").value = "";
+//clear button 
+function clearInput(){
+  urlInput.value = "";
+}
+function displayImageOnEnter(event){
+  if (event.keyCode === 13){
+    image.src = urlInput.value;
   }
-})
+}; 
 
-// Project: COMPLETE
+// D.R.Y. 
+displayButton.addEventListener("click", displayImage); 
+
+addEventListener("keypress", displayImageOnEnter);
