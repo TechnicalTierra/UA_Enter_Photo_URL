@@ -2,32 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photo URL</title>
+  <title>TESTING</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header></header>
-  <main>
-    <div>
-      <h2>Enter Image URL</h2>
-      <!-- <h3>Enter a URL to a Photo</h3> -->
+  <h1>Enter the URL of a Photo</h1>
+  
+  <input id="urlInput" type="text" />
+  <button id="clearButton" onclick="clearInput()">Clear Input Field</button>
+  <br />
 
-      <input type="text"  id="urlInput" placeholder="Enter a url"> 
-      <!-- placeholder="Enter or paste URL here" -->
+  <button id="displayButton" >Click to Display Image Below</button>
 
-      <div class="buttonDiv">
-        <button onclick="showImage()">Click to Display Image Below</button>
-      </div>
+  <br />
 
-      <div class="display-image-div">
-
-        <img id="dynamicImage" src=""/>
-
-      </div>
-    </div>
-  </main>
-  <footer></footer>
+  <img id="image" src="" alt="" />
+  
   <script src="script.js"></script>
 </body>
 </html>
